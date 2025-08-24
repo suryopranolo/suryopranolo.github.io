@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertemuan 3 - Membuat Algoritma Sederhana</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+/* Menu Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: #1f2937;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 12px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Kontainer Materi */
+.container {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1f2937;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+}
+
+h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f1f5f9;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Tombol Kembali & Cetak */
+.btn-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-back, .btn-print {
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-back {
+    background-color: #1f2937;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #3b82f6;
+}
+
+.btn-print {
+    background-color: #10b981;
+    color: white;
+    border: none;
+}
+
+.btn-print:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255,255,255,0.85);
+    margin-top: auto;
+}
+
+/* Style untuk kode C++ */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1; /* single spacing */
+    background-color: #e5e7eb;
+    padding: 5px 8px;
+    border-radius: 6px;
+    display: block;
+    margin: 10px 0;
+    white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pertemuan 3: Membuat Algoritma Sederhana</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pertemuan1.html">Pertemuan 1</a>
+        <a href="pertemuan2.html">Pertemuan 2</a>
+        <a href="pertemuan3.html">Pertemuan 3</a>
+        <a href="pertemuan4.html">Pertemuan 4</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Tujuan Pembelajaran</h2>
+    <ul>
+        <li>Mengerti konsep algoritma dalam berpikir komputasional.</li>
+        <li>Mampu membuat algoritma sederhana untuk masalah nyata.</li>
+        <li>Mengimplementasikan algoritma menggunakan bahasa C++.</li>
+    </ul>
+
+    <h2>Materi</h2>
+
+    <div class="card">
+        <h3>1. Pengertian Algoritma</h3>
+        <p>Algoritma adalah urutan langkah-langkah logis untuk menyelesaikan suatu masalah atau tugas. Dalam berpikir komputasional, algoritma membantu memecahkan masalah secara sistematis sehingga bisa diimplementasikan dengan bahasa pemrograman.</p>
+    </div>
+
+    <div class="card">
+        <h3>2. Langkah-Langkah Membuat Algoritma</h3>
+        <ul>
+            <li>Identifikasi masalah.</li>
+            <li>Tentukan input dan output.</li>
+            <li>Buat langkah-langkah penyelesaian secara logis.</li>
+            <li>Uji algoritma dengan contoh nyata.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>3. Contoh Algoritma: Menghitung Rata-Rata Nilai Siswa</h3>
+        <ul>
+            <li>Masukkan jumlah siswa dan nilai masing-masing.</li>
+            <li>Jumlahkan semua nilai.</li>
+            <li>Hitung rata-rata = jumlah / jumlah siswa.</li>
+            <li>Tampilkan hasil rata-rata.</li>
+        </ul>
+        <p><b>Implementasi C++:</b></p>
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    double jumlah = 0, nilai, rata_rata;
+
+    cout &lt;&lt; "Masukkan jumlah siswa: ";
+    cin &gt;&gt; n;
+
+    for(int i = 1; i &lt;= n; i++) {
+        cout &lt;&lt; "Masukkan nilai siswa ke-" &lt;&lt; i &lt;&lt; ": ";
+        cin &gt;&gt; nilai;
+        jumlah += nilai;
+    }
+
+    rata_rata = jumlah / n;
+    cout &lt;&lt; "Rata-rata nilai kelas adalah: " &lt;&lt; rata_rata &lt;&lt; endl;
+
+    return 0;
+}
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>4. Contoh Algoritma: Menentukan Bilangan Genap atau Ganjil</h3>
+        <ul>
+            <li>Masukkan bilangan.</li>
+            <li>Cek apakah bilangan MOD 2 = 0 → Genap, jika tidak → Ganjil.</li>
+            <li>Tampilkan hasil.</li>
+        </ul>
+        <p><b>Implementasi C++:</b></p>
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int bilangan;
+    cout &lt;&lt; "Masukkan bilangan: ";
+    cin &gt;&gt; bilangan;
+
+    if(bilangan % 2 == 0) {
+        cout &lt;&lt; bilangan &lt;&lt; " adalah bilangan Genap." &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; bilangan &lt;&lt; " adalah bilangan Ganjil." &lt;&lt; endl;
+    }
+
+    return 0;
+}
+        </code>
+    </div>
+
+    <div class="btn-container">
+        <a href="index.html" class="btn-back">Kembali ke Halaman Utama</a>
+        <button class="btn-print" onclick="window.print()">Cetak / Simpan PDF</button>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Materi Informatika SMA | Desain Modern by Guru
+</footer>
+
+</body>
+</html>

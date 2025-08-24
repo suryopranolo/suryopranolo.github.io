@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertemuan 2 - Komputasional Thinking</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #212529;
+}
+body.dark-mode {
+  --bg: #121212;
+  --fg: #f8f9fa;
+}
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    font-size: 2em;
+    color: #4a4e69;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #4a4e69;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffd700;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #4a4e69;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255,255,255,0.8);
+    margin-top: auto;
+}
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4a4e69;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn-back:hover {
+    background: #6c63ff;
+}
+.cetak {
+    width: 180px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: all 0.3s ease;
+}
+.cetak:hover {
+    background-color: #6c63ff; /* warna lebih gelap */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* efek bayangan */
+    transform: translateY(-2px); /* efek naik sedikit */
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pertemuan 2: Identifikasi Pola, Dekomposisi, dan Abstraksi</h1>
+</header>
+
+<nav>
+    <a href="pertemuan1.html">Pertemuan 1</a>
+    <a href="pertemuan2.html">Pertemuan 2</a>
+    <a href="pertemuan3.html">Pertemuan 3</a>
+    <a href="pertemuan4.html">Pertemuan 4</a>
+</nav>
+
+<div class="container">
+    <h2>Tujuan Pembelajaran</h2>
+    <ul>
+        <li>Siswa dapat menjelaskan konsep pola, dekomposisi, dan abstraksi.</li>
+        <li>Siswa dapat mengidentifikasi pola pada sebuah masalah.</li>
+        <li>Siswa mampu menerapkan dekomposisi dan abstraksi dalam kasus sederhana.</li>
+    </ul>
+
+    <h2>Materi</h2>
+    <div class="card">
+        <h3>1. Pengenalan Pola (Pattern Recognition)</h3>
+        <p>Mengidentifikasi kemiripan atau pola dalam masalah. Pola ini membantu kita membuat solusi lebih cepat karena kita dapat menggunakan kembali strategi yang sudah ada.</p>
+        <p><b>Contoh:</b> Menyusun jadwal pelajaran mirip dengan membuat jadwal kerja—keduanya memiliki pola: hari, waktu, aktivitas.</p>
+    </div>
+
+    <div class="card">
+        <h3>2. Dekomposisi</h3>
+        <p>Memecah masalah besar menjadi bagian-bagian kecil agar lebih mudah dikelola.</p>
+        <p><b>Contoh:</b> Membuat laporan keuangan → Kumpulkan data pemasukan, data pengeluaran, hitung selisih, buat grafik.</p>
+    </div>
+
+    <div class="card">
+        <h3>3. Abstraksi</h3>
+        <p>Mengambil inti masalah dan mengabaikan detail yang tidak relevan.</p>
+        <p><b>Contoh:</b> Saat menghitung rata-rata nilai, kita tidak peduli siapa yang memiliki nilai, cukup fokus pada angka.</p>
+    </div>
+
+    <h2>Contoh Kasus dan Pembahasan</h2>
+    <div class="card">
+        <p><b>Masalah:</b> Anda diminta membuat sistem untuk menghitung nilai rata-rata siswa dalam satu kelas.</p>
+        <p><b>Dekomposisi:</b> 1) Kumpulkan nilai → 2) Hitung jumlah → 3) Bagi dengan jumlah data.</p>
+        <p><b>Pola:</b> Sama seperti menghitung rata-rata tinggi badan.</p>
+        <p><b>Abstraksi:</b> Detail nama siswa diabaikan, cukup fokus pada nilai angka.</p>
+    </div>
+
+    <!-- Tombol Kembali & Cetak -->
+    <div style="margin-top: 20px; display: flex; gap: 15px;">
+        <a href="index.html" class="btn-back">Kembali ke Halaman Utama</a>
+        <button onclick="window.print()" class="cetak">Cetak / Simpan PDF</button>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 Materi Informatika SMA | Desain Modern by Guru
+</footer>
+
+</body>
+</html>

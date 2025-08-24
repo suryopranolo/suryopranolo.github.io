@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertemuan 4 - Flowchart & Pseudocode</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6f8;
+        color: #333;
+    }
+    header {
+        background: linear-gradient(135deg, #3a8ef6, #6a5acd);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    nav {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 15px 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #3a8ef6;
+        background: #f4f4f4;
+        border-radius: 8px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #3a8ef6;
+        border-left: 6px solid #3a8ef6;
+        padding-left: 12px;
+        margin-bottom: 10px;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    .highlight {
+        background: #f0f8ff;
+        border-left: 4px solid #3a8ef6;
+        padding: 12px;
+        border-radius: 6px;
+        margin: 15px 0;
+    }
+    .card {
+        background: #f9fafb;
+        border-radius: 10px;
+        padding: 18px;
+        margin: 15px 0;
+        border: 1px solid #e1e1e1;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    pre {
+        background: #272822;
+        color: #f8f8f2;
+        padding: 12px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 14px;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+        color: #666;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+
+<header>Pertemuan 4: Flowchart & Pseudocode</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="pertemuan1.html">Pertemuan 1</a>
+    <a href="pertemuan2.html">Pertemuan 2</a>
+    <a href="pertemuan3.html">Pertemuan 3</a>
+</nav>
+
+<div class="container">
+    <h2>Tujuan Pembelajaran</h2>
+    <ul>
+        <li>Siswa memahami pengertian Flowchart dan Pseudocode.</li>
+        <li>Siswa mampu membuat Flowchart dan Pseudocode sederhana untuk menyelesaikan masalah.</li>
+    </ul>
+
+    <h2>Apa itu Flowchart?</h2>
+    <div class="highlight">
+        Flowchart adalah diagram yang menggambarkan langkah-langkah logis dari suatu proses atau algoritma dengan menggunakan simbol-simbol tertentu.
+    </div>
+
+    <div class="card">
+        <h3>Simbol Umum Flowchart:</h3>
+        <ul>
+            <li><b>Oval</b>: Awal / Akhir</li>
+            <li><b>Persegi Panjang</b>: Proses</li>
+            <li><b>Belah Ketupat</b>: Percabangan (Decision)</li>
+            <li><b>Panah</b>: Alur Proses</li>
+        </ul>
+    </div>
+
+    <h2>Apa itu Pseudocode?</h2>
+    <div class="highlight">
+        Pseudocode adalah deskripsi algoritma menggunakan bahasa sederhana yang menyerupai bahasa pemrograman, tetapi tidak mengikuti aturan sintaks secara ketat.
+    </div>
+
+    <h3>Contoh Kasus: Hitung Rata-rata Nilai</h3>
+    <div class="card">
+        <b>Flowchart:</b>  
+        (Diagram dapat Anda buat dengan simbol-simbol standar seperti Oval, Persegi Panjang, dll.)
+        <br><br>
+        <b>Pseudocode:</b>
+        <pre>
+START
+  Input n
+  total ← 0
+  FOR i ← 1 TO n DO
+    Input nilai
+    total ← total + nilai
+  END FOR
+  rata ← total / n
+  Output rata
+END
+        </pre>
+    </div>
+
+    <h2>Manfaat Flowchart & Pseudocode</h2>
+    <ul>
+        <li>Membantu memvisualisasikan alur algoritma.</li>
+        <li>Mudah dikomunikasikan dan dipahami.</li>
+        <li>Mengurangi kesalahan sebelum diimplementasikan ke bahasa pemrograman.</li>
+    </ul>
+</div>
+
+<footer>
+    &copy; 2025 Guru Informatika SMA | Pertemuan 4
+</footer>
+
+</body>
+</html>
