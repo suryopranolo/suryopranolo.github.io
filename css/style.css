@@ -1,0 +1,15 @@
+:root {
+  --bg: #ffffff;
+  --fg: #212529;
+}
+body.dark-mode {
+  --bg: #121212;
+  --fg: #f8f9fa;
+}
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+.card { border-radius: 1rem; }
+.navbar-brand img { filter: brightness(1.2) }
+a[href="#"][download] { pointer-events: none; opacity: .7; } /* disabled dummy downloads */
